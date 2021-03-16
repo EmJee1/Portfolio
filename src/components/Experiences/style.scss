@@ -1,0 +1,15 @@
+@use '../../style/variables.scss' as *;
+
+.experiences {
+	hr {
+		margin: 50px 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.experiences {
+		hr {
+			margin: 100px 0;
+		}
+	}
+}

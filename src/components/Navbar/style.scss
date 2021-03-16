@@ -1,0 +1,52 @@
+@use '../../style/variables.scss' as *;
+
+.navbar {
+	p.navbar-brand {
+		margin-bottom: 0;
+		color: $purple;
+		font-size: 26px;
+		font-weight: 500;
+	}
+
+	button.navbar-toggler {
+		border-color: transparentize($purple, .8);
+        border-width: 2px;
+
+		span {
+			background-image: url('../../assets/icons/nav-toggler.svg');
+            transition: .6s all;
+		}
+
+		&.collapsed span {
+			transform: rotate(-180deg);
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+    .navbar-nav p {
+        text-align: right;
+        font-size: 20px;
+        font-weight: 300;
+        color: $purple;
+        margin-left: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        .navbar-nav p {
+            margin-bottom: 0;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            margin-top: 0 !important;
+        }
+    }
+}

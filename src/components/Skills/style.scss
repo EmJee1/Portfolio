@@ -1,0 +1,27 @@
+@use '../../style/variables.scss' as *;
+
+.skills {
+	margin-top: 50px;
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	&-wrap {
+		margin-top: 1.6rem;
+		display: flex;
+		justify-content: space-around;
+		gap: 2.6rem;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 0;
+		overflow-y: hidden;
+		scroll-behavior: smooth;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+        margin-top: 100px;
+    }
+}

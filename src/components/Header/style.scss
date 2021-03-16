@@ -1,0 +1,48 @@
+@use '../../style/variables.scss' as *;
+
+.main-header {
+    margin-top: 50px;
+    text-align: center;
+    color: $black;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 332px) {
+    .main-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-header {
+        margin-top: 50px;
+    }
+    .main-header h1 {
+        font-size: 40px;
+    }
+    .main-header h5 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-header {
+        margin-top: 100px;
+    }
+    .main-header h1 {
+        font-size: 74px;
+    }
+    .main-header h5 {
+        font-size: 40px;
+    }
+}
