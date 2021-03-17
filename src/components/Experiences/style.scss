@@ -4,12 +4,45 @@
 	hr {
 		margin: 50px 0;
 	}
+
+	&-row {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	&-item-wrap {
+		margin-top: 30px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.experiences-row {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.experiences-item-wrap {
+		margin: 0 1rem;
+		margin-top: 30px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	.experiences {
 		hr {
 			margin: 100px 0;
+		}
+
+		&-item-wrap {
+			margin: 0 2rem;
+			margin-top: 30px;
 		}
 	}
 }
