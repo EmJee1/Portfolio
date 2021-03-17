@@ -1,9 +1,14 @@
+import { MutableRefObject } from 'react'
 import cartoonImage from '../../assets/images/Cartoonify.svg'
 import './style.scss'
 
-const About = () => {
+interface aboutProps {
+	aboutRef: MutableRefObject<any>
+}
+
+const About = ({ aboutRef }: aboutProps) => {
 	return (
-		<div className='about-me'>
+		<div className='about-me' id='about-me' ref={aboutRef}>
 			<div className='about-me-cartoon'>
 				<img src={cartoonImage} alt='A cartoon version of me' />
 			</div>

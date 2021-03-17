@@ -1,3 +1,5 @@
+import { MutableRefObject } from 'react'
+
 import frontEndIcon from '../../assets/icons/front-end.svg'
 import databaseIcon from '../../assets/icons/database.svg'
 import backEndIcon from '../../assets/icons/back-end.svg'
@@ -6,7 +8,11 @@ import mobileIcon from '../../assets/icons/mobile.svg'
 import Skill from './Skill'
 import './style.scss'
 
-const Skills = () => {
+interface skillsProps {
+	skillsRef: MutableRefObject<any>
+}
+
+const Skills = ({ skillsRef }: skillsProps) => {
 	const skills = [
 		{
 			description: 'Relational and document based databases',
@@ -31,7 +37,7 @@ const Skills = () => {
 	]
 
 	return (
-		<div className='skills'>
+		<div className='skills' id='skills' ref={skillsRef}>
 			<div className='container'>
 				<h2>
 					Skills <span></span>

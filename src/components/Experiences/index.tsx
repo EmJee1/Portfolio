@@ -1,12 +1,18 @@
 import './style.scss'
 
+import { MutableRefObject } from 'react'
+
 import studentAanHuisBanner from '../../assets/images/studentAanHuisBanner.png'
 import getJobsDoneBanner from '../../assets/images/getJobsDoneBanner.png'
 import reclamestalBanner from '../../assets/images/reclamestalBanner.png'
 import PCScoreBanner from '../../assets/images/PCScoreBanner.png'
 import Experience from './Experience'
 
-const Experiences = () => {
+interface experiencesProps {
+	experiencesRef: MutableRefObject<any>
+}
+
+const Experiences = ({ experiencesRef }: experiencesProps) => {
 	const experiencesContent = [
 		{
 			title: 'GetJobsDone',
@@ -52,7 +58,7 @@ const Experiences = () => {
 
 	return (
 		<>
-			<div className='experiences'>
+			<div className='experiences' id='experiences' ref={experiencesRef}>
 				<hr />
 				<div className='container'>
 					<h2>Experiences</h2>
