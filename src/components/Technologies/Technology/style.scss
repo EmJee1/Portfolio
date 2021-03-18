@@ -13,6 +13,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column-reverse;
+		cursor: pointer;
 
 		&.animate {
 			animation-name: animateTechnologyItem;

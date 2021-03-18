@@ -52,6 +52,7 @@ const Technology = ({ technologies }: technologyProps) => {
 					<div className='col-12 col-xl-11 mx-auto'>
 						<div
 							className={`technology-item-inner ${animating ? 'animate' : ''}`}
+							onClick={selectNewTechnology}
 						>
 							<div className='technology-item-inner-left'>
 								<h3>{selectedTechnology.title}</h3>
