@@ -14,7 +14,10 @@ const Contact = ({ contactRef }: contactProps) => {
 					Get in touch via social media, or send me an e-mail
 				</p>
 				<div className='contact-socials'>
-					<div className='social-btn'>
+					<div
+						className='social-btn'
+						onClick={() => window.open('https://github.com/EmJee1')}
+					>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'>
 							<g>
 								<path
@@ -26,7 +29,10 @@ const Contact = ({ contactRef }: contactProps) => {
 							</g>
 						</svg>
 					</div>
-					<div className='social-btn'>
+					<div
+						className='social-btn'
+						onClick={() => window.open('https://www.linkedin.com/in/mart-jan/')}
+					>
 						<svg
 							id='Linkedin'
 							xmlns='http://www.w3.org/2000/svg'
