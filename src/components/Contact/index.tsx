@@ -46,7 +46,14 @@ const Contact = ({ contactRef }: contactProps) => {
 					</div>
 				</div>
 				<hr />
-				<p className='contact-email'>mart-janroeleveld@outlook.com</p>
+				<p
+					className='contact-email'
+					onClick={() =>
+						(window.location.href = 'mailto:mart-janroeleveld@outlook.com')
+					}
+				>
+					mart-janroeleveld@outlook.com
+				</p>
 			</div>
 		</div>
 	)
