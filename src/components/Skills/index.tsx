@@ -1,9 +1,9 @@
 import { MutableRefObject } from 'react'
 
-import frontEndIcon from '../../assets/icons/front-end.svg'
-import databaseIcon from '../../assets/icons/database.svg'
-import backEndIcon from '../../assets/icons/back-end.svg'
-import mobileIcon from '../../assets/icons/mobile.svg'
+import frontEndIcon from '../../assets/icons/skillsIcons/front-end.svg'
+import databaseIcon from '../../assets/icons/skillsIcons/database.svg'
+import backEndIcon from '../../assets/icons/skillsIcons/back-end.svg'
+import mobileIcon from '../../assets/icons/skillsIcons/mobile.svg'
 
 import Skill from './Skill'
 import './style.scss'

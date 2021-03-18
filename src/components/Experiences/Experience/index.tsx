@@ -1,7 +1,5 @@
 import './style.scss'
 
-import { motion } from 'framer-motion'
-
 interface experienceParams {
 	title: string
     companyLink: string
@@ -22,7 +20,7 @@ const Experience = ({
 	return (
 		<div className='experience-item'>
 			<img src={image} alt='' />
-			<motion.div className='experience-item-filter'></motion.div>
+			<div className='experience-item-filter'></div>
 			<div className='experience-item-inner'>
 				<h5 onClick={() => window.open(companyLink)}>{title}</h5>
 				<ul>
