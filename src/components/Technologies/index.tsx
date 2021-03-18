@@ -4,7 +4,12 @@ import { MutableRefObject } from 'react'
 
 import typeScriptIcon from '../../assets/icons/programmingIcons/typescript-plain.svg'
 import VSCodeIcon from '../../assets/icons/programmingIcons/visualstudio-plain.svg'
+import mongoDBIcon from '../../assets/icons/programmingIcons/mongodb-original.svg'
 import nodejsIcon from '../../assets/icons/programmingIcons/nodejs-original.svg'
+import reactIcon from '../../assets/icons/programmingIcons/react-original.svg'
+import adobeXdIcon from '../../assets/icons/programmingIcons/xd-plain.svg'
+import gitIcon from '../../assets/icons/programmingIcons/git-original.svg'
+import phpIcon from '../../assets/icons/programmingIcons/php-plain.svg'
 
 import Technology from './Technology'
 
@@ -18,7 +23,7 @@ const Technologies = ({ technologiesRef }: technologiesProps) => {
 			title: 'Node.js',
 			proficiency: 'Advanced',
 			description:
-				'I love node because it allows developers to use JavaScript on both the front- as well as the back-end',
+				'I love node because it allows developers to use JavaScript on both the front- as well as the back-end.',
 			icon: nodejsIcon,
 		},
 		{
@@ -34,6 +39,41 @@ const Technologies = ({ technologiesRef }: technologiesProps) => {
 			description:
 				'What is a developer without his IDE? My weapon of choice is VS Code, because it is very customizable and lightweigt.',
 			icon: VSCodeIcon,
+		},
+		{
+			title: 'Adobe XD',
+			proficiency: 'Intermediate',
+			description:
+				'My favorite web and app design tool is Adobe XD. It does the job, and it has some neat functionality that helps the develpment process.',
+			icon: adobeXdIcon,
+		},
+		{
+			title: 'React.js',
+			proficiency: 'Advanced',
+			description:
+				'My go-to javascript framework has to be React.js. Expecially in combination with typescript, front-end development goes as smooth as a breeze.',
+			icon: reactIcon,
+		},
+		{
+			title: 'MongoDB',
+			proficiency: 'Advanced',
+			description:
+				'I really like MongoDB for its simplicity. it is my most-used database, and using it with mongoose has made an amazing development experience.',
+			icon: mongoDBIcon,
+		},
+		{
+			title: 'PHP',
+			proficiency: 'Intermediate',
+			description:
+				"PHP is one of the easier-to-learn back-end development languages, but that does not limit it's capabilities.",
+			icon: phpIcon,
+		},
+		{
+			title: 'GIT',
+			proficiency: 'Advanced',
+			description:
+				'Git is the industry-standard for version-control. I have primarily used GitHub, but also have some experience with BitBucket.',
+			icon: gitIcon,
 		},
 	]
 
