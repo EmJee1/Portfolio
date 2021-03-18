@@ -8,12 +8,14 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Experiences from './components/Experiences'
 import Technologies from './components/Technologies'
+import Contact from './components/Contact'
 
 const App = () => {
 	const aboutRef = useRef(null)
 	const skillsRef = useRef(null)
 	const experiencesRef = useRef(null)
 	const technologiesRef = useRef(null)
+	const contactRef = useRef(null)
 
 	return (
 		<>
@@ -22,12 +24,14 @@ const App = () => {
 				skillsRef={skillsRef}
 				experiencesRef={experiencesRef}
 				technologiesRef={technologiesRef}
+				contactRef={contactRef}
 			/>
 			<Header />
 			<About aboutRef={aboutRef} />
 			<Skills skillsRef={skillsRef} />
 			<Experiences experiencesRef={experiencesRef} />
 			<Technologies technologiesRef={technologiesRef} />
+			<Contact contactRef={contactRef} />
 		</>
 	)
 }

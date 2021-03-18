@@ -6,6 +6,7 @@ interface navbarProps {
 	skillsRef: MutableRefObject<any>
 	experiencesRef: MutableRefObject<any>
 	technologiesRef: MutableRefObject<any>
+	contactRef: MutableRefObject<any>
 }
 
 const Navbar = ({
@@ -13,6 +14,7 @@ const Navbar = ({
 	skillsRef,
 	experiencesRef,
 	technologiesRef,
+	contactRef,
 }: navbarProps) => {
 	return (
 		<nav className='navbar navbar-expand-lg container'>
@@ -60,7 +62,12 @@ const Navbar = ({
 						>
 							<p className='nav-link'>Technologies</p>
 						</li>
-						<li className='nav-item'>
+						<li
+							className='nav-item'
+							onClick={() =>
+								contactRef.current.scrollIntoView({ behaviour: 'smooth' })
+							}
+						>
 							<p className='nav-link'>Contact</p>
 						</li>
 					</ul>
