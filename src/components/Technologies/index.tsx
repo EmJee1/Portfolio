@@ -37,7 +37,7 @@ const Technologies = ({ technologiesRef }: technologiesProps) => {
 			title: 'Visual Studio Code',
 			proficiency: 'Advanced',
 			description:
-				'What is a developer without his IDE? My weapon of choice is VS Code, because it is very customizable and lightweigt.',
+				'What is a developer without his IDE? My weapon of choice is VS Code, because it is very customizable and lightweight.',
 			icon: VSCodeIcon,
 		},
 		{
@@ -58,7 +58,7 @@ const Technologies = ({ technologiesRef }: technologiesProps) => {
 			title: 'MongoDB',
 			proficiency: 'Advanced',
 			description:
-				'I really like MongoDB for its simplicity. it is my most-used database, and using it with mongoose has made an amazing development experience.',
+				'I really like MongoDB for its simplicity. It is my most-used database, and using it with mongoose has made an amazing development experience.',
 			icon: mongoDBIcon,
 		},
 		{

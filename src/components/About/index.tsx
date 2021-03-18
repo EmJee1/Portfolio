@@ -19,7 +19,7 @@ const About = ({ aboutRef }: aboutProps) => {
 						welcome on my website!
 					</h2>
 					<p>
-						I am a dutch webdeveloper, specializing in <br />
+						I am a Dutch webdeveloper, specializing in <br />
 						back-end development. I'm always up for learning <br />
 						new technologies, and my knowledge is constantly <br />
 						evolving. My skills range from front-end tools to <br />
